@@ -1,0 +1,102 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    background: #f2f2f2;
+    color: #323232;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container{
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 32px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(red, green, blue, alpha)
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 20px;
+    padding: 24px 0;
+    border-bottom: 1px solid lightgrey;
+}
+
+section :last-child{
+    border-bottom: none;
+}
+
+.section-title {
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+img.image{
+    width: 130px;
+}
+
+.name{
+    font-size: 48px;
+    line-height: 1;
+}
+
+.detail{
+    font-size: 24px;
+    font-weight: 300;
+    color: blue;
+}
+
+.mail{
+    font-size: 18px;
+    font-weight: 300;
+    color: blueviolet;
+    font-style: italic;
+    
+
+}
+
+.sub{
+    font-size: 25px;
+    line-height: 1;
+    text-decoration: underline;
+}
+
+
+.job{
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid lightgrey;
+}
+
+job:last-child{
+    border-bottom:none;
+}
+
+.job-title-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+.job-company{
+    font-weight: bold;
+}
+
+.job-company{
+     font-weight: bold;
+    font-size: 15px;
+
+}
