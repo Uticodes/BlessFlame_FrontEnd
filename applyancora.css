@@ -1,0 +1,117 @@
+@import "compass/css3";
+body {
+    background-color: #E1BEE7;
+    text-align: center;
+    font-family: 'Gayathri',sans-serif,Helvetica, sans-serif;
+    min-width: 320px;
+  }
+  .button {
+    background-color: #7B1FA2;
+    border-radius: 4px;
+    color: white;
+    font-size: 1em;
+    height: 40px;
+    width: 96px;
+    margin: 10px;
+    border: 0px solid;
+    cursor: pointer;
+  }
+  .button:hover{
+    background-color: rgb(13, 1, 19);
+  }
+  .border{
+    padding: 5px;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #E1BEE7;
+    border-radius: 9px;
+  }
+#form-outer {
+    background-color: rgba(255, 255, 255, 0.89);
+    margin: 0 auto;
+    border-radius: 4px;
+    width: 75%;
+    max-width: 900px;
+    padding: 10px;
+    padding-top: 20px;
+}
+.radio, .checkbox {
+    position: relative;
+    left: -43px;
+    margin-left: 10px;
+    display: block;
+    padding-bottom: 10px;
+}
+.labels {
+    width: 70%;
+    text-align: left;
+  }
+.leftTab {
+    display: inline-block;
+    text-align: right;
+    width: 40%;
+  }
+  .input-field {
+    height: 20px;
+    width: 70%;
+    padding: 5px;
+    margin: 10px;
+    border: 0.5px solid #E1BEE7;
+    border-radius: 9px;
+  }
+  .input-field2{
+    height: 30px;
+    width: 70%;
+    padding: 5px;
+    margin: 10px;
+    border: 0.5px solid #E1BEE7;
+    border-radius: 9px;
+  }
+  .rightTab {
+    display: inline-block;
+    text-align: left;
+    width: 48%;
+    vertical-align: middle;
+  }
+  .parentprofile,
+input[type="checkbox"] {
+  float: left;
+  margin-right: 5px;
+}
+  .childprofile,
+input[type="checkbox"] {
+  float: left;
+  margin-right: 5px;
+}
+  .dropdown {
+    height: 35px;
+    width: 72%;
+    padding: 5px;
+    margin: 10px;  
+    margin-top: 15px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+  }
+
+/* smaller screens*/
+  @media screen and (max-width: 520px) {
+    .leftTab {
+      width: 100%;
+      text-align: left;
+    }
+    .rightTab {
+      width: 80%;
+      float: left;
+    }
+    .input-field {
+      width: 100%;
+    }
+}
+@media screen and (max-width: 833px) {
+    .input-field {
+      width: 80%;
+    }
+    select {
+      width: 90%;
+    }
+  }
