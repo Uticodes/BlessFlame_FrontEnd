@@ -47,7 +47,7 @@ margin-top: 1.5%
 /* Centered text */
 .centered {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
  color: white; 
@@ -55,6 +55,10 @@ font-size: 35px;
 font-family: 'georgia';
 
 
+}
+
+.mySlides {
+border-radius: 25px;
 }
 
 .wwd {
@@ -65,14 +69,22 @@ padding: 0.5em 0.5em;
 }
 
 .wwd1 {
-  
- text-align: center;
+ 
+transform: translate(-50%, -50%);
+ margin-left: 40%;
   background: rgb(0, 0, 0); /* Fallback color */
   background: rgba(0, 0, 0, 0.2); /* Black background with 0.5 opacity */
-  color: white;
-  border-radius: 25px;
-padding: 1em 0em;
+  
+border-radius: 25px;
+padding: 1em 1em;
+font-size: 25px;
+font-family: 'georgia';
 
+
+}
+
+.sponsor {
+color: white;
 }
 
 .abt {
@@ -80,10 +92,14 @@ padding: 1em 0em;
 text-align: center;
 color: #7B1FA2;
 font-size: 35px;
+margin-top: 2%;
+
 }
 
 .about {
 float: right;
+border-radius: 25px;
+margin-top: -2%;
 
 }
 
@@ -109,11 +125,12 @@ width: 55%;
 text-align: center; 
 margin-top: 13%;
 margin-left: 0%;
-padding: 6em 2em;
+padding: 40px 4px;
 background-color: #E1BEE7;
 color: #7B1FA2;
 border-radius: 25px;
-width: 95%;
+width: 100%;
+font-size: 35px;
 
 }
 
@@ -128,6 +145,8 @@ float: center;
   text-transform: uppercase;
 border-radius: 25px;
 cursor: pointer;
+font-size: 25px;
+font-family: 'georgia';
 }
 
 botton:hover {
@@ -152,3 +171,79 @@ margin-top: 2%
 }
 
 
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("https://bit.ly/2LhQExg");
+
+  min-height: 620px;
+margin-top: 1%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+border-radius: 25px;
+}
+
+.contact{
+margin-top: 0%;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 10px;
+  max-width: 500px;
+  padding: 35px;
+  background-color: #7B1FA2;
+border-radius: 25px;
+}
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 18px;   
+  border: 1px solid #ccc; 
+  border-radius: 20px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical;
+
+}
+
+.form {
+color: white;
+font-size: 20px;
+font-family: 'georgia'
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: white;
+  color: #7B1FA2;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+font-size: 24px;
+text-align: center;
+box-shadow: 0 9px #999;
+outline: none;
+float: right;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #E1BEE7;
+}
+
+.footer {
+margin-left: 0%;
+font-size: 5px;
+}
