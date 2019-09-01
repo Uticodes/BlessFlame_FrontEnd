@@ -1,292 +1,175 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
+<head>
+	<title>ANCORA</title>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="styles/teams.css">
+	<a href="contact-us.html">CONTACT US</a> 
+<a href="partners.html">PARTNERS</a> 
+<a href="applyancoraform.html">APPLY</a>
+<a href="#about">ABOUT</a>
+<a href="index.html">HOME</a>
 
-            <a href="contact-us.html">CONTACT US</a> 
-            <a href="#partners">PARTNERS</a> 
-            <a href="applyancoraform.html">APPLY</a>
-            <a href="#about">ABOUT</a>
-            <a href="index.html">HOME</a>
-        <title>ANCORA</title>
-        <meta content="width=device-width, initial-scale=1" name="viewport" />
-        <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
-        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <style>
-            * {
-                box-sizing: border-box;
-                margin: 0;
-            }
-            body {
-                font-family: 'Lato', sans-serif;
-            }
-            .text-center {
-                text-align: center;
-            }
-            .teams-wrapper {
-                background: #39074e;
-                padding: 80px 30px 100px 30px;
-                color: #fff;
-            }
-            .teams-wrapper div {
-                width: 90%;
-                margin: auto;
-            }
-            .teams-wrapper h1 {
-                font-size: 45px;
-                padding-bottom: 50px;
-            }
-            .teams-wrapper p {
-                font-size: 24px;
-            }
-            .teamdetails-container {
-                padding: 80px 0;
-            }
-            .team-background {
-                width: 100%;
-                height: 130px;
-                background: #39074e;
-            }
-            .flex-container {
-                display: flex;
-                flex-wrap: wrap;
-                width: 100%;
-            }
-            .flex-space{
-                padding: 50px 80px;
-            }
-            .flex-item {
-                width: 33.33%;
-            }
-            .flex-item .team-div {
-                border: 1px solid #39074e;
-                margin: 0 40px;
-                padding: 0 0 30px 0;
-            }
-            .team-picture {
-                text-align: center;
-                margin-top: -55px;
-            }
-            .team-picture img {
-                width: 100px;
-                height: 100px;
-                border-radius: 50%;
-            }
-            .team-details {
-                padding: 0 20px;
-                text-align: center;
-            }
-            .team-div h4 {
-                font-size: 27px;
-                color: #39074e;
-            }
-            .team-div h6 {
-                font-size: 17px;
-                font-weight: none;
-                color: #707070;
-                padding-bottom: 7px;
-            }
-            .team-div p {
-                font-size: 19px;
-                color: #707070;
-                padding-bottom: 10px;
-            }
-            .socials-container {
-                display: inline-block;
-            }
-            .social-item {
-                width: auto;
-                float: left;
-                margin: 0.5em;
-            }
-            .flex-item a {
-                text-decoration: none;
-            }
-            .img-responsive {
-                max-width: 100%;
-                height: auto;
-            }
-            .mt-50 {
-                margin-top: 50px;
-            }
-
-            /* for smaller screens */
-            @media only screen and (max-width: 700px) {
-                .flex-container {
-                    display: block;
-                    padding: 0;
-                }
-                .flex-item{
-                    width: auto;
-                    margin-bottom: 20px;
-                }
-                .teams-wrapper p {
-                    font-size: 21px;
-                }
-            }
-            @media only screen and (min-width: 701px) and (max-width: 900px) {
-                .flex-container {
-                   padding: 0;
-                }
-            }
-        </style>
-    </head>
-    <body>
-        <main>
-            <div class="teams-wrapper">
-                <div>
-                    <h1 class="text-center">OUR TEAM</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-            </div>
-            <div class="teamdetails-container">
-                <div class="flex-container flex-space">
-                    <div class="flex-item">
-                        <div class="team-div">
-                            <div class="team-background"></div>
-                            <div class="team-picture">
-                                <img src="images/schoolchild.jpeg" class="img-responsive" alt="schoolchild">
-                            </div>
-                            <div class="team-details">
-                                <h4>Surname Firstname</h4>
-                                <h6>Front end developer</h6>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-                                <div class="socials-container">
-                                    <div class="social-item">
-                                        <a href=""><i class="fa fa-linkedin"></i></a>
-                                    </div>
-                                    <div class="social-item">
-                                        <a href=""><i class="fa fa-twitter"></i></a>
-                                    </div>
-                                    <div class="social-item">
-                                        <a href=""><i class="fa fa-github"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex-item">
-                        <div class="team-div">
-                            <div class="team-background"></div>
-                            <div class="team-picture">
-                                <img src="images/schoolchild-book.jpeg" class="img-responsive" alt="schoolchild">
-                            </div>
-                            <div class="team-details">
-                                <h4>Surname Firstname</h4>
-                                <h6>Front end developer</h6>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-                                <div class="socials-container">
-                                    <div class="social-item">
-                                        <a href=""><i class="fa fa-linkedin"></i></a>
-                                    </div>
-                                    <div class="social-item">
-                                        <a href=""><i class="fa fa-twitter"></i></a>
-                                    </div>
-                                    <div class="social-item">
-                                        <a href=""><i class="fa fa-github"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex-item">
-                        <div class="team-div">
-                            <div class="team-background"></div>
-                            <div class="team-picture">
-                                <img src="images/schoolchild-bag.jpeg" class="img-responsive" alt="schoolchild">
-                            </div>
-                            <div class="team-details">
-                                <h4>Surname Firstname</h4>
-                                <h6>Front end developer</h6>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-                                <div class="socials-container">
-                                    <div class="social-item">
-                                        <a href=""><i class="fa fa-linkedin"></i></a>
-                                    </div>
-                                    <div class="social-item">
-                                        <a href=""><i class="fa fa-twitter"></i></a>
-                                    </div>
-                                    <div class="social-item">
-                                        <a href=""><i class="fa fa-github"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex-item mt-50">
-                        <div class="team-div">
-                            <div class="team-background"></div>
-                            <div class="team-picture">
-                                <img src="images/schoolchild.jpeg" class="img-responsive" alt="schoolchild">
-                            </div>
-                            <div class="team-details">
-                                <h4>Surname Firstname</h4>
-                                <h6>Front end developer</h6>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-                                <div class="socials-container">
-                                    <div class="social-item">
-                                        <a href=""><i class="fa fa-linkedin"></i></a>
-                                    </div>
-                                    <div class="social-item">
-                                        <a href=""><i class="fa fa-twitter"></i></a>
-                                    </div>
-                                    <div class="social-item">
-                                        <a href=""><i class="fa fa-github"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex-item mt-50">
-                        <div class="team-div">
-                            <div class="team-background"></div>
-                            <div class="team-picture">
-                                <img src="images/schoolchild-book.jpeg" class="img-responsive" alt="schoolchild">
-                            </div>
-                            <div class="team-details">
-                                <h4>Surname Firstname</h4>
-                                <h6>Front end developer</h6>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-                                <div class="socials-container">
-                                    <div class="social-item">
-                                        <a href=""><i class="fa fa-linkedin"></i></a>
-                                    </div>
-                                    <div class="social-item">
-                                        <a href=""><i class="fa fa-twitter"></i></a>
-                                    </div>
-                                    <div class="social-item">
-                                        <a href=""><i class="fa fa-github"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex-item mt-50">
-                        <div class="team-div">
-                            <div class="team-background"></div>
-                            <div class="team-picture">
-                                <img src="images/schoolchild-bag.jpeg" class="img-responsive" alt="schoolchild">
-                            </div>
-                            <div class="team-details">
-                                <h4>Surname Firstname</h4>
-                                <h6>Front end developer</h6>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-                                <div class="socials-container">
-                                    <div class="social-item">
-                                        <a href=""><i class="fa fa-linkedin"></i></a>
-                                    </div>
-                                    <div class="social-item">
-                                        <a href=""><i class="fa fa-twitter"></i></a>
-                                    </div>
-                                    <div class="social-item">
-                                        <a href=""><i class="fa fa-github"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-    </body>
+</head>
+	<body>
+		<main>
+			<div class="teams-wrapper">
+					<div>
+							<h1 class="text-center">OUR TEAM</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+			</div>
+			<div class="teamdetails-container">
+				<div class="flex-container flex-space">
+					<div class="flex-item">
+						<div class="team-div">
+								<div class="team-background"></div>
+								<div class="team-picture">
+										<img src="images/schoolchild.jpeg" class="img-responsive" alt="schoolchild">
+								</div>
+								<div class="team-details">
+										<h4>Surname Firstname</h4>
+										<h6>Front end developer</h6>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+										<div class="socials-container">
+												<div class="social-item">
+														<a href=""><i class="fa fa-linkedin"></i></a>
+												</div>
+												<div class="social-item">
+														<a href=""><i class="fa fa-twitter"></i></a>
+												</div>
+												<div class="social-item">
+														<a href=""><i class="fa fa-github"></i></a>
+												</div>
+										</div>
+								</div>
+						</div>
+				</div>
+				<div class="flex-item">
+						<div class="team-div">
+								<div class="team-background"></div>
+								<div class="team-picture">
+										<img src="images/schoolchild-book.jpeg" class="img-responsive" alt="schoolchild">
+								</div>
+								<div class="team-details">
+										<h4>Surname Firstname</h4>
+										<h6>Front end developer</h6>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+										<div class="socials-container">
+												<div class="social-item">
+														<a href=""><i class="fa fa-linkedin"></i></a>
+												</div>
+												<div class="social-item">
+														<a href=""><i class="fa fa-twitter"></i></a>
+												</div>
+												<div class="social-item">
+														<a href=""><i class="fa fa-github"></i></a>
+												</div>
+										</div>
+								</div>
+						</div>
+				</div>
+				<div class="flex-item">
+						<div class="team-div">
+								<div class="team-background"></div>
+								<div class="team-picture">
+										<img src="images/schoolchild-bag.jpeg" class="img-responsive" alt="schoolchild">
+								</div>
+								<div class="team-details">
+										<h4>Surname Firstname</h4>
+										<h6>Front end developer</h6>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+										<div class="socials-container">
+												<div class="social-item">
+														<a href=""><i class="fa fa-linkedin"></i></a>
+												</div>
+												<div class="social-item">
+														<a href=""><i class="fa fa-twitter"></i></a>
+												</div>
+												<div class="social-item">
+														<a href=""><i class="fa fa-github"></i></a>
+												</div>
+										</div>
+								</div>
+						</div>
+				</div>
+				<div class="flex-item mt-50">
+						<div class="team-div">
+								<div class="team-background"></div>
+								<div class="team-picture">
+										<img src="images/schoolchild.jpeg" class="img-responsive" alt="schoolchild">
+								</div>
+								<div class="team-details">
+										<h4>Surname Firstname</h4>
+										<h6>Front end developer</h6>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+										<div class="socials-container">
+												<div class="social-item">
+														<a href=""><i class="fa fa-linkedin"></i></a>
+												</div>
+												<div class="social-item">
+														<a href=""><i class="fa fa-twitter"></i></a>
+												</div>
+												<div class="social-item">
+														<a href=""><i class="fa fa-github"></i></a>
+												</div>
+										</div>
+								</div>
+						</div>
+				</div>
+				<div class="flex-item mt-50">
+						<div class="team-div">
+								<div class="team-background"></div>
+								<div class="team-picture">
+										<img src="images/schoolchild-book.jpeg" class="img-responsive" alt="schoolchild">
+								</div>
+								<div class="team-details">
+										<h4>Surname Firstname</h4>
+										<h6>Front end developer</h6>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+										<div class="socials-container">
+												<div class="social-item">
+														<a href=""><i class="fa fa-linkedin"></i></a>
+												</div>
+												<div class="social-item">
+														<a href=""><i class="fa fa-twitter"></i></a>
+												</div>
+												<div class="social-item">
+														<a href=""><i class="fa fa-github"></i></a>
+												</div>
+										</div>
+								</div>
+						</div>
+				</div>
+				<div class="flex-item mt-50">
+						<div class="team-div">
+								<div class="team-background"></div>
+								<div class="team-picture">
+										<img src="images/schoolchild-bag.jpeg" class="img-responsive" alt="schoolchild">
+								</div>
+								<div class="team-details">
+										<h4>Surname Firstname</h4>
+										<h6>Front end developer</h6>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+										<div class="socials-container">
+												<div class="social-item">
+														<a href=""><i class="fa fa-linkedin"></i></a>
+												</div>
+												<div class="social-item">
+														<a href=""><i class="fa fa-twitter"></i></a>
+												</div>
+												<div class="social-item">
+														<a href=""><i class="fa fa-github"></i></a>
+												</div>
+										</div>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
 </html>
