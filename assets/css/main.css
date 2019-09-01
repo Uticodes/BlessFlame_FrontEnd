@@ -39,18 +39,7 @@ h2 {
 }
 
 .container {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    /* grid-template-rows: 1fr; */
-    grid-gap: 10px;
-    grid-template-areas: 
-    "header"
-    "about"
-    "apply"
-    "partners"
-    "contact"
-    "footer"; 
+    width: 100%;   
 }
 
 .clear {
@@ -64,11 +53,10 @@ HEADER SECTION
 */
 
 header {
-    grid-area: header;
+    width: 100%;
 }
 
 .top {
-    grid-area: top;
     height: 8rem;
     width: 100%;
     background: #fff;
@@ -106,15 +94,25 @@ header {
     color: #fff ;
     font-size: 5.5rem;
     font-weight: 700;
+    text-shadow: 1px 2px 1px rgba(0, 0, 0, .8);
 }
 
 .big-hero--content p {
     color: #fff;
     background-color: #441558;
     padding: 1.5rem;
-    font-size: 2rem;
+    font-size: 1.6rem;
     border-radius: .3rem;
 }
+
+@media only screen and (max-width: 600px) {
+    .big-hero--content p  { 
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+    }
+}
+
+
 
 .big-hero--content h3 {
     color: #441558;
@@ -124,6 +122,7 @@ header {
     margin-top: 1rem;
     border-radius: .3rem;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 .heading-primary {
@@ -169,13 +168,9 @@ ABOUT US SECTION
 */
 
 .about-section {
-    grid-area: about;
     width: 80%;
     margin: 0 auto;
-    padding-top: 5rem;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 1rem; */
+    padding-top: 5rem;/
 }
 
 .about-section--text {
@@ -190,9 +185,12 @@ ABOUT US SECTION
     color: gray;
 }
 
-.about-section--photo {
-   width: 40%;
-   float: right;
+
+
+.about-section--photo {   
+   float: left;
+   padding-top: 4.5rem;
+   width: 48%;
 }
 
 .about-section--photo img {
@@ -203,6 +201,18 @@ ABOUT US SECTION
     
 }
 
+@media only screen and (max-width: 900px) {
+    .about-section--text p { 
+        line-height: 3rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .about-section--text, .about-section--photo  { 
+        width: 100%
+    }
+}
+
 
 /* 
 //////////////////////////////////////////////////////////////
@@ -211,32 +221,48 @@ APPLY SECTION
 */
 
 .apply-section {
-    grid-area: apply;
     background-color: #e1bee7;
-    height: 15rem;
+    height: 20rem;
     position: relative;
     margin-top: 5rem;
+    width: 100%;
 }
 
 .apply-section--text {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 10%;
+    transform: translate(0%, -50%);
 }
 
 .apply-section h2 {
     font-size: 3rem;
+    display: inline;
+}
+
+@media only screen and (max-width: 900px) {
+    .apply-section h2 {
+        font-size: 2.5rem;
+        
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .apply-section h2 {
+        font-size: 2rem;
+        
+    }
 }
 
 .apply-section span {
     background-color: #441558;
     color: #fff;
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding: 1.2rem;
     border-radius: .8rem;
-    margin-left: 6rem;
+    margin-left: 3rem;
     cursor: pointer;
+    display: inline-block;
 }
 
 
@@ -248,6 +274,29 @@ PARTNERS SECTION
 
 .partners-section {
     grid-area: partners;
+    margin: 0 auto;
+    width: 80%;
+    padding: 6rem 0;
+    position: relative;
+}
+
+.partners-section h2 {
+    font-size: 2.5rem;
+    display: inline-block;
+    margin-right: 15rem;
+}
+
+.partners-section img {
+    width: 15rem;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 6rem;
+}
+
+.partners-section .second img {
+    margin-top: 3rem;
+    
+    
 }
 
 
@@ -259,6 +308,9 @@ CONTACT US SECTION
 
 .contact-section {
     grid-area: contact;
+    background: url(../img/contact_page.jpg) no-repeat;
+    background-size: cover;
+    height: 70vh;
 }
 
 
@@ -270,4 +322,7 @@ FOOTER SECTION
 
 footer {
     grid-area: footer;
+    background-color: #441558;
+    height: 20vh;
+    margin-top: -5rem;
 }
