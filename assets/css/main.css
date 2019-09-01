@@ -1,0 +1,273 @@
+/* 
+    primary color: #7b1fa2;
+    primary light color: #e1bee7
+*/
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+
+}
+
+
+html {
+    /* // This defines what 1 rem is 10px */
+    font-size: 62.5%;   
+    /* //1 rem = 10px;  10px/16px = 62.5% */
+}
+
+body {
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    background: whitesmoke;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+::selection {
+    background-color: #7b1fa2;
+    color: #fff;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: #7b1fa2;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 1fr; */
+    grid-gap: 10px;
+    grid-template-areas: 
+    "header"
+    "about"
+    "apply"
+    "partners"
+    "contact"
+    "footer"; 
+}
+
+.clear {
+    clear: both;
+}
+
+/* 
+//////////////////////////////////////////////////////////////
+HEADER SECTION 
+//////////////////////////////////////////////////////////////
+*/
+
+header {
+    grid-area: header;
+}
+
+.top {
+    grid-area: top;
+    height: 8rem;
+    width: 100%;
+    background: #fff;
+    padding: 0 5rem;
+}
+
+.logo {
+    float: left;    
+}
+
+.logo img {
+    height: 12.5rem;
+    width: auto;
+    padding-bottom: 3rem
+}
+
+.big-hero {
+    height: 85vh;
+    background-image: 
+        url(../img/ancora-home_big.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+
+.big-hero--content {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.big-hero--content h2 {
+    color: #fff ;
+    font-size: 5.5rem;
+    font-weight: 700;
+}
+
+.big-hero--content p {
+    color: #fff;
+    background-color: #441558;
+    padding: 1.5rem;
+    font-size: 2rem;
+    border-radius: .3rem;
+}
+
+.big-hero--content h3 {
+    color: #441558;
+    background-color: #fff;
+    padding: 1.5rem;
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: .3rem;
+    cursor: pointer;
+}
+
+.heading-primary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-image: linear-gradient(to right,#7b1fa2,  #e1bee7);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    transition: all .2s;
+}
+
+.heading-primary:hover {
+    transform: skewY(.5deg) skewX(5deg) scale(1.1);
+    text-shadow: .5rem 1rem 2rem rgba(0,0,0, .2);
+}
+
+nav {
+   float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 1rem;
+    padding-top: 2.5rem;   
+    list-style-type: none; 
+}
+
+nav a {
+    color: #7b1fa2;
+    text-transform: uppercase;   
+    text-decoration: none; 
+    font-weight: 600;
+}
+
+
+
+/* 
+//////////////////////////////////////////////////////////////
+ABOUT US SECTION 
+//////////////////////////////////////////////////////////////
+*/
+
+.about-section {
+    grid-area: about;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 5rem;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem; */
+}
+
+.about-section--text {
+    float: left;
+    width: 50%;
+}
+
+.about-section--text p {
+    line-height: 5rem;
+    text-align: justify;
+    font-size: 2rem;
+    color: gray;
+}
+
+.about-section--photo {
+   width: 40%;
+   float: right;
+}
+
+.about-section--photo img {
+    width: 40rem;
+    height: auto;
+    border-radius: .8rem;
+    margin-left: 3rem;
+    
+}
+
+
+/* 
+//////////////////////////////////////////////////////////////
+APPLY SECTION 
+//////////////////////////////////////////////////////////////
+*/
+
+.apply-section {
+    grid-area: apply;
+    background-color: #e1bee7;
+    height: 15rem;
+    position: relative;
+    margin-top: 5rem;
+}
+
+.apply-section--text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.apply-section h2 {
+    font-size: 3rem;
+}
+
+.apply-section span {
+    background-color: #441558;
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 1.2rem;
+    border-radius: .8rem;
+    margin-left: 6rem;
+    cursor: pointer;
+}
+
+
+/* 
+//////////////////////////////////////////////////////////////
+PARTNERS SECTION 
+//////////////////////////////////////////////////////////////
+*/
+
+.partners-section {
+    grid-area: partners;
+}
+
+
+/* 
+//////////////////////////////////////////////////////////////
+CONTACT US SECTION 
+//////////////////////////////////////////////////////////////
+*/
+
+.contact-section {
+    grid-area: contact;
+}
+
+
+/* 
+//////////////////////////////////////////////////////////////
+FOOTER SECTION 
+//////////////////////////////////////////////////////////////
+*/
+
+footer {
+    grid-area: footer;
+}
