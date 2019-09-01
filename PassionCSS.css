@@ -1,0 +1,249 @@
+html {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+font-family: 'arial black';  
+font-size: 13pt;
+    
+background-color: white;
+    
+padding: 10px;
+    
+margin: 0;
+
+}
+
+.logo {
+float: Left;
+}
+
+
+.topnav {
+  background-color: white;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #7B1FA2;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+margin-top: 1.5%
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ color: white; 
+font-size: 35px;
+font-family: 'georgia';
+
+
+}
+
+.mySlides {
+border-radius: 25px;
+}
+
+.wwd {
+  background-color: #7B1FA2;
+text-align: center;
+border-radius: 25px;
+padding: 0.5em 0.5em;
+}
+
+.wwd1 {
+ 
+transform: translate(-50%, -50%);
+ margin-left: 40%;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.2); /* Black background with 0.5 opacity */
+  
+border-radius: 25px;
+padding: 1em 1em;
+font-size: 25px;
+font-family: 'georgia';
+
+
+}
+
+.sponsor {
+color: white;
+}
+
+.abt {
+
+text-align: center;
+color: #7B1FA2;
+font-size: 35px;
+margin-top: 2%;
+
+}
+
+.about {
+float: right;
+border-radius: 25px;
+margin-top: -2%;
+
+}
+
+.aside {
+float: left;
+
+}
+
+.section p {
+ position: relative;
+text-align: center; 
+top: 30%;
+left: 5%;
+
+font-size: 25px;
+font-family: 'georgia';
+width: 55%;
+
+}
+
+.know {
+
+text-align: center; 
+margin-top: 13%;
+margin-left: 0%;
+padding: 40px 4px;
+background-color: #E1BEE7;
+color: #7B1FA2;
+border-radius: 25px;
+width: 100%;
+font-size: 35px;
+
+}
+
+.botton {
+float: center;
+  background-color: #7B1FA2;
+  box-shadow: 0 5px 0 darkred;
+  color: white;
+  padding: 1em 1.5em;
+  position: relative;
+  text-decoration: underline;
+  text-transform: uppercase;
+border-radius: 25px;
+cursor: pointer;
+font-size: 25px;
+font-family: 'georgia';
+}
+
+botton:hover {
+  background-color: #ce0606;
+}
+
+botton:active {
+  box-shadow: none;
+  top: 5px;
+}
+
+.partner {
+align-content: center;
+color: #7B1FA2;
+font-size: 35px;
+margin-top: 0%;
+margin-bottom: 5%;
+}
+
+.partners {
+margin-top: 2%
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("https://bit.ly/2LhQExg");
+
+  min-height: 620px;
+margin-top: 1%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+border-radius: 25px;
+}
+
+.contact{
+margin-top: 0%;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 10px;
+  max-width: 500px;
+  padding: 35px;
+  background-color: #7B1FA2;
+border-radius: 25px;
+}
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 18px;   
+  border: 1px solid #ccc; 
+  border-radius: 20px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical;
+
+}
+
+.form {
+color: white;
+font-size: 20px;
+font-family: 'georgia'
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: white;
+  color: #7B1FA2;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+font-size: 24px;
+text-align: center;
+box-shadow: 0 9px #999;
+outline: none;
+float: right;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #E1BEE7;
+}
+
+.footer {
+margin-left: 0%;
+font-size: 5px;
+}
