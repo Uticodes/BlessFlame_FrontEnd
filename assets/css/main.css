@@ -265,6 +265,11 @@ APPLY SECTION
     display: inline-block;
 }
 
+.apply-section span a {
+    color: inherit;
+    text-decoration: none;
+}
+
 
 /* 
 //////////////////////////////////////////////////////////////
