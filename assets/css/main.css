@@ -194,16 +194,21 @@ ABOUT US SECTION
 }
 
 .about-section--photo img {
-    width: 40rem;
+    width: 85%;
     height: auto;
     border-radius: .8rem;
     margin-left: 3rem;
+    text-align: center;
     
 }
 
 @media only screen and (max-width: 900px) {
     .about-section--text p { 
         line-height: 3rem;
+    }
+
+    .about-section--photo img {
+        width: 100%; 
     }
 }
 
@@ -280,9 +285,10 @@ PARTNERS SECTION
 .partners-section {
     grid-area: partners;
     margin: 0 auto;
-    width: 80%;
+    width: 95%;
     padding: 6rem 0;
     position: relative;
+    text-align: center;
 }
 
 .partners-section h2 {
@@ -298,9 +304,24 @@ PARTNERS SECTION
     margin-right: 6rem;
 }
 
+
+
+@media only screen and (max-width: 900px) {
+    .partners-section img {
+        margin-right: 3rem;
+        
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .partners-section img {
+        margin-right: 2rem;
+        
+    }
+}
+
 .partners-section .second img {
-    margin-top: 3rem;
-    
+    margin-top: 3rem;  
     
 }
 
