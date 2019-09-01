@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="applyancora.css">
+    <link href="https://fonts.googleapis.com/css?family=Gayathri&display=swap" rel="stylesheet">
+    <title>
+        Application Form
+    </title>
+</head>
+
+<body>
+    <img id="logo" height="118px" width="125"
+        src="https://res.cloudinary.com/kruzabasi/image/upload/v1567129944/ancora/imageedit_1_8560111850_szzkbb.png"
+        alt="ancora logo">
+    <header>
+        <h1 id="title">
+            ANCORA FUNDING APPLICATION FORM.
+        </h1>
+    </header>
+    <div id="form-outer">
+        <P id="instruction">
+            <h3>Please complete all sections of this form; any information not completed will delay the application
+                process</h3>
+        </P>
+        <hr color="#7B1FA2">
+        <form method="GET" id="application">
+            <em>section 1- Child's Detail</em>
+            <div class="border">
+                <div class="rowTab">
+                    <div class="leftTab">
+                        <input required id="cfname" name="cfname" type="text" class="input-field"
+                            placeholder="Enter Child's First Name" autofocus>
+                    </div>
+                    <div class="rightTab">
+                        <input required id="clname" name="clname" type="text" class="input-field"
+                            placeholder="Enter Child's Last Name">
+                    </div>
+                </div>
+                <div class="rowTab">
+                    <div class="leftTab">
+                        <input required id="cdob" name="cdob" type="date" class="input-field"
+                            placeholder="Enter Child's Date of Birth">
+                    </div>
+                    <div class="rightTab">
+                        <ul style="list-style: none;">
+                            <li class="radio"><label>Male<input required name="Gender" value="Male" type="radio"
+                                        class="childprofile"></label></li>
+                            <li class="radio"><label>Female<input required name="Gender" value="Female" type="radio"
+                                        class="childprofile"></label></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="rowTab">
+                    <input required id="address" name="address" type="text" class="input-field2" placeholder="Address">
+                </div>
+                <div class="rowTab">
+                    <div class="leftTab">
+                        <select required id="dropdown" name=state class="dropdown">
+                            <option>Child's State of Origin</option>
+                            <option>Not Nigerian</option>
+                            <option>ABUJA FCT</option>
+                            <option>ABIA</option>
+                            <option>ADAMAWA</option>
+                            <option>AKWA IBOM</option>
+                            <option>ANAMBRA</option>
+                            <option>BAUCHI</option>
+                            <option>BAYELSA</option>
+                            <option>BENUE</option>
+                            <option>BORNO</option>
+                            <option>CROSS RIVER</option>
+                            <option>DELTA</option>
+                            <option>EBONYI</option>
+                            <option>EDO</option>
+                            <option>EKITI</option>
+                            <option>ENUGU</option>
+                            <option>GOMBE</option>
+                            <option>IMO</option>
+                            <option>JIGAWA</option>
+                            <option>KADUNA</option>
+                            <option>KANO</option>
+                            <option>KATSINA</option>
+                            <option>KEBBI</option>
+                            <option>KOGI</option>
+                            <option>KWARA</option>
+                            <option>LAGOS</option>
+                            <option>NASSARAWA</option>
+                            <option>NIGER</option>
+                            <option>OGUN</option>
+                            <option>ONDO</option>
+                            <option>OSUN</option>
+                            <option>OYO</option>
+                            <option>PLATEAU</option>
+                            <option>RIVERS</option>
+                            <option>SOKOTO</option>
+                            <option>TARABA</option>
+                            <option>YOBE</option>
+                            <option>ZAMFARA</option>
+                        </select>
+                    </div>
+                    <div class="rightTab">
+                        <input required id="firstlang" name="firstlang" type="text" class="input-field"
+                            placeholder="Enter Child's First Language">
+                    </div>
+                </div>
+                <div class="rowTab">
+                    <input required id="specialneed" name="specialneed" type="text" class="input-field2"
+                        placeholder="Please Let Us Know If Your Child Has Any Special Need and/or Disability">
+                </div>
+            </div>
+            <hr color="#7B1FA2">
+            <em>section 2- Parent/Guardian Details</em>
+            <div class="border">
+                <div class="rowTab">
+                    <div class="leftTab">
+                        <input required id="gfname" name="gfname" type="text" class="input-field"
+                            placeholder="Enter Parent/Guardian First Name">
+                    </div>
+                    <div class="rightTab">
+                        <input required id="glname" name="glname" type="text" class="input-field"
+                            placeholder="Enter Parent/Guardian Last Name">
+                    </div>
+                </div>
+                <div class="rowTab">
+                    <div class="leftTab">
+                        <input required id="cdob" name="cdob" type="date" class="input-field"
+                            placeholder="Enter Parent/Guardian Date of Birth">
+                    </div>
+                    <div class="rightTab">
+                        <input required id="relationship" name="relationship" type="text" class="input-field"
+                            placeholder="  Relationship To Child ">
+                    </div>
+                </div>
+                <div class="rowTab">
+                    <input required id="address" name="address" type="text" class="input-field2"
+                        placeholder="Address (If Different From Childs Address) ">
+                </div>
+                <div class="rowTab">
+                    <div class="leftTab">
+                        <select required id="dropdown" name="state" class="dropdown">
+                            <option>Guardians State of Origin</option>
+                            <option>Not Nigerian</option>
+                            <option>ABUJA FCT</option>
+                            <option>ABIA</option>
+                            <option>ADAMAWA</option>
+                            <option>AKWA IBOM</option>
+                            <option>ANAMBRA</option>
+                            <option>BAUCHI</option>
+                            <option>BAYELSA</option>
+                            <option>BENUE</option>
+                            <option>BORNO</option>
+                            <option>CROSS RIVER</option>
+                            <option>DELTA</option>
+                            <option>EBONYI</option>
+                            <option>EDO</option>
+                            <option>EKITI</option>
+                            <option>ENUGU</option>
+                            <option>GOMBE</option>
+                            <option>IMO</option>
+                            <option>JIGAWA</option>
+                            <option>KADUNA</option>
+                            <option>KANO</option>
+                            <option>KATSINA</option>
+                            <option>KEBBI</option>
+                            <option>KOGI</option>
+                            <option>KWARA</option>
+                            <option>LAGOS</option>
+                            <option>NASSARAWA</option>
+                            <option>NIGER</option>
+                            <option>OGUN</option>
+                            <option>ONDO</option>
+                            <option>OSUN</option>
+                            <option>OYO</option>
+                            <option>PLATEAU</option>
+                            <option>RIVERS</option>
+                            <option>SOKOTO</option>
+                            <option>TARABA</option>
+                            <option>YOBE</option>
+                            <option>ZAMFARA</option>
+                        </select>
+                    </div>
+                    <div class="rightTab">
+                        <input required id="occupation" name="occupation" type="text" class="input-field"
+                            placeholder=" Occupation">
+                    </div>
+                </div>
+                <div class="rowTab">
+                    <div class="leftTab">
+                        <input required id="contact" name="contact" type="tel" class="input-field2"
+                            placeholder=" Contact Telephone " minlength="11" maxlength="14">
+
+                    </div>
+                    <div class="rightTab">
+                        <div class="labels">
+                            <label for=â€œapplicantprofileâ€>Do You Have Parental Responsibility? </label>
+                        </div>
+                        <ul style="list-style: none;">
+                            <li class="radio"><label>Yes<input required name="Parental Responsibility" value="Yes"
+                                        type="radio" class="parentprofile"></label></li>
+                            <li class="radio"><label>No<input required name="Parental Responsibility" value="No"
+                                        type="radio" class="parentprofile"></label></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <button class="button" type="submit">Submit</button>
+            <a target="_blank"
+                href="https://res.cloudinary.com/ancora-blessflame/image/upload/v1567244902/Ancora%20Project/ANCORA_FUNDING_APPLICATION_FORM_phomn1.pdf"
+                download="application_ancora.pdf"> <button form="#" class="button" type="download"> Download</button>
+            </a>
+        </form>
+    </div>
+</body>
+
+</html>
