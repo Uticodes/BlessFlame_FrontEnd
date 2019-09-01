@@ -103,7 +103,71 @@
             .mt-50 {
                 margin-top: 50px;
             }
-
+          
+          /*style for the header*/
+          header{
+            height: 65px;
+          }
+          .header-left{
+            float: left;
+          } 
+          .header-right {
+            text-align: center;
+            margin-top: 10px;
+            margin-right: 12px;
+            float: right;
+          }
+          a{ text-decoration: none}
+          .header-right a:hover{
+              background-color: purple;
+              color: white
+            }
+          .header-right a{
+            text-decoration: none;
+            color: purple;
+            margin-right: 15px;
+          
+          }
+          .header-container{
+            background-color:  white;
+          }
+         .header-right li{
+            list-style-type: none;
+            margin-top: 15px;
+            margin-right: 15px;
+            display: inline-block;
+          }
+         
+          
+          footer{
+          
+            height: 150px;
+            width: 100%;
+            background-color: #39074e;
+            
+          }
+          .footer-left{ 
+              float: left;
+            }
+          .footer-left img{
+              margin-top: 15px;
+              margin-left: 70px;
+            }
+            
+          .footer-right{
+              float: right;
+            }
+          
+          .footer-right li{
+            list-style-type: none;
+            margin-right: 70px;
+            margin-top: 15px;
+          }
+          .footer-right a{
+            color: white;
+            margin-top: 15px;
+          }
+          
             /* for smaller screens */
             @media only screen and (max-width: 700px) {
                 .flex-container {
@@ -117,6 +181,10 @@
                 .teams-wrapper p {
                     font-size: 21px;
                 }
+              .header-right li {
+              margin-right: 2px;
+                margin-top: 0;
+              }
             }
             @media only screen and (min-width: 701px) and (max-width: 900px) {
                 .flex-container {
@@ -126,6 +194,21 @@
         </style>
     </head>
     <body>
+      <header>
+        <div class="header-container">
+        <div class ="header-left">
+          <a href="#"><img class="header-logo" src="https://res.cloudinary.com/iinintinteintegintegrintegral/image/upload/v1567317332/My%20web/imageedit_1_8560111850_cpue5o.png" alt ="Ancora-logo" width="60px" height="60px">
+        </a>
+              </div>
+        <div class ="header-right">
+                                  <ul>
+                                  <li><a href="#">About Us</a></li>
+                                                 <li><a href=">rave.flutterwave.com/pay/ancorazhmb">Donate</a></li>
+                                                                <li><a href="#">Partners</a></li>
+<li><a href="#">Contact Us</a></li>                                                            
+                                                 </ul>                          </div>
+               </div>
+      </header>
         <main>
             <div class="teams-wrapper">
                 <div>
@@ -282,5 +365,18 @@
                 </div>
             </div>
         </main>
+      <footer>
+        <div class="footer-left"><a href="#"><img src="https://res.cloudinary.com/iinintinteintegintegrintegral/image/upload/v1567230601/My%20web/ancora_udeujy.png" width="70px" height="70px"></a></div>
+        <div class ="footer-right">         
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="rave.flutterwave.com/pay/ancorazhmb">Donate</a></li>
+          <li><a href="#">Partners</a></li>
+          <li><a href="#">Contact </a></li>
+          
+        </ul>
+          </div>
+      </footer>
     </body>
 </html>
+  
