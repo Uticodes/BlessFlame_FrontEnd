@@ -1,0 +1,154 @@
+html {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+font-family: 'arial black';  
+font-size: 13pt;
+    
+background-color: white;
+    
+padding: 10px;
+    
+margin: 0;
+
+}
+
+.logo {
+float: Left;
+}
+
+
+.topnav {
+  background-color: white;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #7B1FA2;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+margin-top: 1.5%
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ color: white; 
+font-size: 35px;
+font-family: 'georgia';
+
+
+}
+
+.wwd {
+  background-color: #7B1FA2;
+text-align: center;
+border-radius: 25px;
+padding: 0.5em 0.5em;
+}
+
+.wwd1 {
+  
+ text-align: center;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.2); /* Black background with 0.5 opacity */
+  color: white;
+  border-radius: 25px;
+padding: 1em 0em;
+
+}
+
+.abt {
+
+text-align: center;
+color: #7B1FA2;
+font-size: 35px;
+}
+
+.about {
+float: right;
+
+}
+
+.aside {
+float: left;
+
+}
+
+.section p {
+ position: relative;
+text-align: center; 
+top: 30%;
+left: 5%;
+
+font-size: 25px;
+font-family: 'georgia';
+width: 55%;
+
+}
+
+.know {
+
+text-align: center; 
+margin-top: 13%;
+margin-left: 0%;
+padding: 6em 2em;
+background-color: #E1BEE7;
+color: #7B1FA2;
+border-radius: 25px;
+width: 95%;
+
+}
+
+.botton {
+float: center;
+  background-color: #7B1FA2;
+  box-shadow: 0 5px 0 darkred;
+  color: white;
+  padding: 1em 1.5em;
+  position: relative;
+  text-decoration: underline;
+  text-transform: uppercase;
+border-radius: 25px;
+cursor: pointer;
+}
+
+botton:hover {
+  background-color: #ce0606;
+}
+
+botton:active {
+  box-shadow: none;
+  top: 5px;
+}
+
+.partner {
+align-content: center;
+color: #7B1FA2;
+font-size: 35px;
+margin-top: 0%;
+margin-bottom: 5%;
+}
+
+.partners {
+margin-top: 2%
+}
+
+
