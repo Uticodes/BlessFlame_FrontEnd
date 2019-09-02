@@ -17,30 +17,29 @@
 </head>
 <body>
 
-    <div class="contact-us">
+    <form class="contact-us" action="form.php" method="post">
         <div class="title">
             <h1>Contact us</h1>
         </div>
 
         <div class="form">
             <div class="form-item">
-                <input type="text" class="input" placeholder="firstname">
+                <input type="text" class="input" placeholder="firstname" name="firstname">
             </div>
             <div class="form-item">
-                    <input type="text" class="input" placeholder="Lastname">
+                    <input type="text" class="input" placeholder="Lastname" name="lastname">
                 </div>
             <div class="form-item">
-                        <input type="text" class="input" placeholder="Email">
+                        <input type="text" class="input" placeholder="Email" name="email">
                     </div>  
             <div class="form-item">
-                <textarea class="input message" cols="30" rows="10" placeholder="message....."></textarea>
+                <textarea name="message" class="input message" cols="30" rows="10" placeholder="message....."></textarea>
             </div>         
         </div>
 
-        <div class="btn">
-            submit
-        </div>
-    </div>
+        <input type="submit" value="Submit" name="submit" class="btn">
+           
+       </form>
 
     <img class="logo" src="https://res.cloudinary.com/dx12zaip6/image/upload/v1567227220/ancora_c9hpww.png" alt="">
     
