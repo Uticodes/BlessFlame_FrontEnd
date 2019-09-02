@@ -16,14 +16,30 @@ footer {
 
 
 .footer-flex {
-	width: 30%;
+	width: 40%;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	padding: 8px;
+}
+
+@media only screen and (max-width: 930px) {
+    .footer-flex {
+       width: 50%;
+        
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .footer-flex {
+       width: 70%;
+        
+    }
 }
 
 .footer-item {
- margin-top: 2em;
+ margin-top: 1.5em;
+ margin-right: 2em;
 }
 
 #footerP {
