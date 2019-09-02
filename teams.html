@@ -1,18 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-	<li><a href="index.html">Home</a></li>
-    <li><a href="#about">About Us</a></li>
-    <li><a href="donate.html">Donate</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="teams.html">Team</a></li>
-    <li><a href="contact-us">Contact</a></li>
-
-        <title>ANCORA</title>
+        <title>ANCORA Team</title>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
         <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         <style>
             * {
                 box-sizing: border-box;
@@ -145,6 +140,9 @@
             display: inline-block;
           }
          
+          a i {
+              color: purple;
+          }
           
           footer{
           
@@ -201,21 +199,27 @@
         </style>
     </head>
     <body>
-      <header>
-        <div class="header-container">
-        <div class ="header-left">
-          <a href="#"><img class="header-logo" src="https://res.cloudinary.com/iinintinteintegintegrintegral/image/upload/v1567317332/My%20web/imageedit_1_8560111850_cpue5o.png" alt ="Ancora-logo" width="60px" height="60px">
-        </a>
-              </div>
-        <div class ="header-right">
-                                  <ul>
-                                  <li><a href="#">About Us</a></li>
-                                                 <li><a href=">rave.flutterwave.com/pay/ancorazhmb">Donate</a></li>
-                                                                <li><a href="#">Partners</a></li>
-<li><a href="#">Contact Us</a></li>                                                            
-                                                 </ul>                          </div>
-               </div>
-      </header>
+            <div class="top">
+                    <div class="logo">
+                      <a href="/" title="Ancora">
+                        <img src="assets/img/logo.png" alt="Ancora Logo"
+                      /></a>
+                    </div>
+                    <nav>
+                      <ul>
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="teams.html">Team</a></li>
+                        <li><a href="contact-us">Contact</a></li>
+                        <li><a class="donate" href="donate.html">Donate</a></li>
+                      </ul>
+                    </nav>
+                    <div class="clear"></div>
+                  </div>
+
+
         <main>
             <div class="teams-wrapper">
                 <div>
@@ -372,7 +376,7 @@
                 </div>
             </div>
         </main>
-      <footer>
+      <!-- <footer>
         <div class="footer-left"><a href="#"><img src="https://res.cloudinary.com/iinintinteintegintegrintegral/image/upload/v1567230601/My%20web/ancora_udeujy.png" width="70px" height="70px"></a></div>
         <div class ="footer-right">         
         <ul>
@@ -383,7 +387,30 @@
           
         </ul>
           </div>
-      </footer>
+      </footer> -->
+
+
+      <footer>
+            <div class="footer-flex">
+                <div class="footer-item">
+                    <img src="images/ancora.png" alt="logo">
+                </div>
+                <div id="footerP" class="footer-item">
+                    <p>47 Evergreen Rd, Roseville, CA 95673</p>
+                    <p>+234 345 678 903</p>
+                    <p>care@ancora.com</p>
+                </div>
+                            </div>
+                            
+                            <div class="floatRight">
+                                <div class="fontAwe">
+                                    <i class="fa fa-instagram"></i>
+                                    <i class="fa fa-facebook"></i>
+                                    <i class="fa fa-twitter"></i>
+                                </div>
+                                <small>&copy; Ancora 2019</small>
+                            </div> 
+        </footer>
     </body>
 </html>
   
