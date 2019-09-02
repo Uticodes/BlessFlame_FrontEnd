@@ -1,3 +1,5 @@
+@import '../../styles/footer.css';
+
 /* 
     primary color: #7b1fa2;
     primary light color: #e1bee7
@@ -505,8 +507,8 @@ FOOTER SECTION
 
 
 footer {
-    grid-area: footer;
-    background-color: #441558;
-    height: 20vh;
-    margin-top: -5rem;
+   
+    /* background-color: #441558; */
+    /* height: 20vh; */
+    /* margin-top: -5rem; */
 }
