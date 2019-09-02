@@ -13,12 +13,7 @@ body{
     -moz-background-size:cover;
     -o-background-size: cover;
     background-size: cover;
-    
        
-       
-
-
-        
 }
 
 .contact-us {
@@ -66,16 +61,3 @@ body{
     border-radius: 20px;
     cursor: pointer;
 }
-.logo{
-    background-color: #7B1FA2;
-    height: 80px;
-    border: #7B1FA2;
-    padding-right: 80rem;
-    margin-top: 1rem;
-    padding-left: 3rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    
-  
-}
-

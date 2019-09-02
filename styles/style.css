@@ -1,34 +1,44 @@
 body{
     margin: 0;
-    padding: 0;
 }
-nav{
-    float: left;
-    /* margin: 50px; */
-    overflow:hidden;
-    text-align: center;
-    margin-top: 50px;
-    margin-left: 600px;
-}
-nav ul li{
-    display: inline-block;
+
+ul.nav {
     list-style-type: none;
-    margin-left: 20px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #7B1FA2;
+}
+
+ul.nav li {float: left;
+ margin: 4px }
+
+ul.nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.nav li a:hover:not(.active) {background-color: #E1BEE7 ;}
+
+ul.nav li a.active {background-color: #E1BEE7;}
+
+ul.nav li.right {float: right;}
+
+@media screen and (max-width: 600px){
+    ul.nav li.right, 
+    ul.nav li {float: none;}
 }
 .img{
     float: left;
     position: relative;
-    margin: 0px 0px 0px 50px;
-    width: 200px;
-    height: 200px;
+    margin: 10px 100px 10px 50px;
+    width: 100px;
+    height: 60px;
 }
-nav > ul > li > a{
-    color: rgb(82, 0, 158);
-    display: block;
-    line-height: 2em;
-    padding: 0.5em 1em;
-    text-decoration: none;
-}
+
 a:hover{
     background-color: purple;
     color: white;
@@ -53,37 +63,8 @@ a:hover{
     resize: both;  
     max-width: 100%; 
 }
-.girl{
-    max-width: 100%;
-}
-.text{
-    margin-top: -300px;
-    color: white;
-}
-#class{
-    background-color: blueviolet;
-    padding: 25px;
-    margin-left: 500px;
-    margin-top: -20px;
-
-}
-.child{
-    color: purple;
-    font-size: 15px;
-    background-color: white;
-    margin-left: 650px;
-    margin-top: 40px;
-    padding: 15px;
-    border-color: white;
-    border-radius: 15px;
-}
-.h1{
-    margin-left: 650px;
-    margin-bottom: 30px;
-    padding-bottom: 10px;
-}
 .container{
-    width: 2000px;
+    width: 100%;
     margin-top: 100px;
 }
 .about-us{
@@ -115,6 +96,7 @@ a:hover{
     color: purple;
     margin-left: 30px;
     padding-top: 100px;
+    text-align:center;
 }
 .know-btn{
     color: white;
@@ -124,4 +106,87 @@ a:hover{
     padding: 15px;
     border-radius: 9px;
     margin-left: 50px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.row{
+    background: #39074e;
+	padding: 10px 30px 100px 30px;
+	color: #fff;}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 1px #7B1FA2;
+}
+* {
+    box-sizing: border-box;
+}
+.our {
+	font-size: 45px;
+	padding: 10px 0px;
+	text-align: center;
+	background: #39074e;
+	color: #fff;
+}
+.anchor {
+  font-family: Arial, Helvetica, sans-serif;
+	background-image: url("../images/first.jpg");
+	background-repeat: no-repeat, no-repeat;
+	background-size: 100%;
+	background-position: left top, right top;  
+	padding:0px ;
+	height:700px; 
+} 
+.anchor h1,h4 {
+	color: #fff;
+	text-align: center;
+	padding:20px 0px;
+
+}
+.anchor button {
+	color: purple;
+    font-size: 15px;
+    background-color: white;
+    margin-left: 600px;
+    margin-top: 0px;
+    padding: 15px;
+    border-color: white;
+    border-radius: 15px;
+}
+footer {
+  background-color: #7B1FA2;
+  padding: 5px;
+  text-align: center;
+  color: white;
+}
+#toTop {
+	display: none;
+	text-decoration: none;
+	position: fixed;
+	bottom: 24px;
+	right: 3%;
+	overflow: hidden;
+	z-index: 999;
+	width: 32px;
+	height: 32px;
+	border: none;
+	text-indent: 100%;
+	background: url(../images/move-top.png) no-repeat 0px 0px;
 }
