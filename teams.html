@@ -6,7 +6,7 @@
         <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
         <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="assets/css/main.css" />
+        
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         <style>
             * {
@@ -197,8 +197,35 @@
                 }
             }
         </style>
+
+<link rel="stylesheet" href="assets/css/main.css" />
     </head>
     <body>
+
+         <!-- Mobile Navigation Menu -->
+         <div class="mobile-nav">
+                <a href="index.html" title="Ancora">
+                        <img src="assets/img/logo.png" alt="Ancora Logo"
+                      /></a>
+                      <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+                <i class="fa fa-bars"></i>
+                </a>               
+                
+            </div>
+
+            <div id="mobileLinks">
+                    <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="index.html#about">About Us</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="index.html#partners">Partners</a></li>
+                            <li><a href="teams.html">Team</a></li>
+                            <li><a href="contact-us" class="active">Contact</a></li>
+                            <li><a  href="donate.html">Donate</a></li>
+                          </ul>
+                    </div>
+
+                    
             <div class="top">
                     <div class="logo">
                       <a href="index.html" title="Ancora">
@@ -206,15 +233,15 @@
                       /></a>
                     </div>
                     <nav>
-                      <ul>
-                        <li><a href="#" class="active">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="teams.html">Team</a></li>
-                        <li><a href="contact-us">Contact</a></li>
-                        <li><a class="donate" href="donate.html">Donate</a></li>
-                      </ul>
+                            <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="index.html#about">About Us</a></li>
+                                    <li><a href="projects.html">Projects</a></li>
+                                    <li><a href="index.html#partners">Partners</a></li>
+                                    <li><a href="teams.html" class="active">Team</a></li>
+                                    <li><a href="contact-us" >Contact</a></li>
+                                    <li><a class="donate" href="donate.html">Donate</a></li>
+                                  </ul>
                     </nav>
                     <div class="clear"></div>
                   </div>
@@ -411,6 +438,8 @@
                                 <small>&copy; Ancora 2019</small>
                             </div> 
         </footer>
+
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
   
