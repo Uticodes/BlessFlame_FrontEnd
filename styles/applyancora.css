@@ -5,6 +5,11 @@ body {
     font-family: 'Gayathri',sans-serif,Helvetica, sans-serif;
     min-width: 320px;
   }
+
+  header h2 {
+    text-align: center;
+    margin-top: 3rem;
+  }
   .button {
     background-color: #7B1FA2;
     border-radius: 4px;
@@ -30,7 +35,7 @@ body {
     background-color: rgba(255, 255, 255, 0.89);
     margin: 0 auto;
     border-radius: 4px;
-    width: 75%;
+    width: 85%;
     max-width: 900px;
     padding: 10px;
     padding-top: 20px;
