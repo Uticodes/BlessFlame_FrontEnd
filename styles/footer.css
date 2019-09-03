@@ -25,16 +25,15 @@ footer {
 
 @media only screen and (max-width: 930px) {
     .footer-flex {
-       width: 50%;
-        
+       width: 50%;  
     }
 }
 
 @media only screen and (max-width: 750px) {
-    .footer-flex {
-       width: 70%;
-        
-    }
+	.footer-flex {
+			width: 70%;
+			
+	}
 }
 
 .footer-item {
