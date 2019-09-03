@@ -1,3 +1,4 @@
 -[@thedavyloper](https://github.com/thedavyloper) [Slack Username: David A.]
 -[@OttyHaQ](https://github.com/ottyhaq)[Slack username: OttyHaQ]
 -[@acushlakoncept](https://github.com/acushlakoncept/)[Slack username: acushla]
+-[@olaitan12](https://github.com/olaitan12/)[Slack username: devolaitan]
