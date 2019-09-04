@@ -1,552 +1,2916 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <title>ANCORA Team</title>
-        <meta content="width=device-width, initial-scale=1" name="viewport" />
-        <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
-        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        
+
+<head>
+    <title>ANCORA Team</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-        <style>
-            * {
-                box-sizing: border-box;
-                margin: 0;
-            }
-            body {
-                font-family: 'Lato', sans-serif;
-            }
-            .text-center {
-                text-align: center;
-            }
-            .teams-wrapper {
-                background: #39074e;
-                padding: 80px 30px 100px 30px;
-                color: #fff;
-            }
-            .teams-wrapper div {
-                width: 90%;
-                margin: auto;
-            }
-            .teams-wrapper h1 {
-                font-size: 45px;
-                padding-bottom: 50px;
-            }
-            .teams-wrapper p {
-                font-size: 24px;
-            }
-            .teamdetails-container {
-                padding: 80px 0;
-            }
-            .team-background {
-                width: 100%;
-                height: 130px;
-                background: #39074e;
-            }
-            .flex-container {
-                display: flex;
-                flex-wrap: wrap;
-                width: 100%;
-            }
-            .flex-space{
-                padding: 50px 80px;
-            }
-            .flex-item {
-                width: 33.33%;
-            }
-            .flex-item .team-div {
-                border: 1px solid #39074e;
-                margin: 0 40px;
-                padding: 0 0 30px 0;
-            }
-            .team-picture {
-                text-align: center;
-                margin-top: -55px;
-            }
-            .team-picture img {
-                width: 100px;
-                height: 100px;
-                border-radius: 50%;
-            }
-            .team-details {
-                padding: 0 20px;
-                text-align: center;
-            }
-            .team-div h4 {
-                font-size: 27px;
-                color: #39074e;
-            }
-            .team-div h6 {
-                font-size: 17px;
-                font-weight: none;
-                color: #707070;
-                padding-bottom: 7px;
-            }
-            .team-div p {
-                font-size: 19px;
-                color: #707070;
-                padding-bottom: 10px;
-            }
-            .socials-container {
-                display: inline-block;
-            }
-            .social-item {
-                width: auto;
-                float: left;
-                margin: 0.5em;
-            }
-            .flex-item a {
-                text-decoration: none;
-            }
-            .img-responsive {
-                max-width: 100%;
-                height: auto;
-            }
-            .mt-50 {
-                margin-top: 50px;
-            }
-          
-          /*style for the header*/
-          header{
-            height: 65px;
-          }
-          .header-left{
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .teams-wrapper {
+            background: #39074e;
+            padding: 80px 30px 100px 30px;
+            color: #fff;
+        }
+
+        .teams-wrapper div {
+            width: 90%;
+            margin: auto;
+        }
+
+        .teams-wrapper h1 {
+            font-size: 45px;
+            padding-bottom: 50px;
+        }
+
+        .teams-wrapper p {
+            font-size: 24px;
+        }
+
+        .teamdetails-container {
+            padding: 10px 0;
+        }
+
+        .team-background {
+            width: 100%;
+            height: 130px;
+            background: #39074e;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .flex-space {
+            padding: 50px 80px;
+        }
+
+        .flex-item {
+            width: 33.33%;
+        }
+
+        .flex-item .team-div {
+            border: 1px solid #39074e;
+            margin: 0 40px;
+            padding: 0 0 30px 0;
+        }
+
+        .team-picture {
+            text-align: center;
+            margin-top: -55px;
+        }
+
+        .team-picture img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .team-details {
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .team-div h4 {
+            font-size: 27px;
+            color: #39074e;
+        }
+
+        .team-div h6 {
+            font-size: 17px;
+            font-weight: none;
+            color: #707070;
+            padding-bottom: 7px;
+        }
+
+        .team-div p {
+            font-size: 19px;
+            color: #707070;
+            padding-bottom: 10px;
+        }
+
+        .socials-container {
+            display: inline-block;
+        }
+
+        .social-item {
+            width: auto;
             float: left;
-          } 
-          .header-right {
+            margin: 0.5em;
+        }
+
+        .about_me {
+            Border-radius: 10px;
+            color:  #39074e;
+        }
+
+        .flex-item a {
+            text-decoration: none;
+        }
+
+        .img-responsive {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .mt-50 {
+            margin-top: 50px;
+        }
+
+        /*style for the header*/
+        header {
+            height: 65px;
+        }
+
+        .header-left {
+            float: left;
+        }
+
+        .header-right {
             text-align: center;
             margin-top: 10px;
             margin-right: 12px;
             float: right;
-          }
-          a{ text-decoration: none}
-          .header-right a:hover{
-              background-color: purple;
-              color: white
-            }
-          .header-right a{
+        }
+
+        a {
+            text-decoration: none
+        }
+
+        .header-right a:hover {
+            background-color: purple;
+            color: white
+        }
+
+        .header-right a {
             text-decoration: none;
             color: purple;
             margin-right: 15px;
-          
-          }
-          .header-container{
-            background-color:  white;
-          }
-         .header-right li{
+
+        }
+
+        .header-container {
+            background-color: white;
+        }
+
+        .header-right li {
             list-style-type: none;
             margin-top: 15px;
             margin-right: 15px;
             display: inline-block;
-          }
-         
-          a i {
-              color: purple;
-          }
-          
-          footer{
-          
+        }
+
+        a i {
+            color: purple;
+        }
+
+        footer {
+
             height: 150px;
             width: 100%;
             background-color: #39074e;
-            
-          }
-          .footer-left{ 
-              float: left;
-            }
-          .footer-left img{
-              margin-top: 15px;
-              margin-left: 70px;
-            }
-            
-          .footer-right{
-              float: right;
-            }
-          
-          .footer-right li{
+
+        }
+
+        .footer-left {
+            float: left;
+        }
+
+        .footer-left img {
+            margin-top: 15px;
+            margin-left: 70px;
+        }
+
+        .footer-right {
+            float: right;
+        }
+
+        .footer-right li {
             list-style-type: none;
             margin-right: 70px;
             margin-top: 15px;
-          }
-          .footer-right a{
+        }
+
+        .footer-right a {
             color: white;
             margin-top: 15px;
-          }
-          
-            /* for smaller screens */
-            @media only screen and (max-width: 700px) {
-                .flex-container {
-                    display: block;
-                    padding: 0;
-                }
-                .flex-item{
-                    width: auto;
-                    margin-bottom: 20px;
-                }
-                .teams-wrapper p {
-                    font-size: 21px;
-                }
-              .header-right li {
-              margin-right: 2px;
+        }
+
+        /* for smaller screens */
+        @media only screen and (max-width: 700px) {
+            .flex-container {
+                display: block;
+                padding: 0;
+            }
+
+            .flex-item {
+                width: auto;
+                margin-bottom: 20px;
+            }
+
+            .teams-wrapper p {
+                font-size: 21px;
+            }
+
+            .header-right li {
+                margin-right: 2px;
                 margin-top: 0;
-              }
             }
-            @media only screen and (min-width: 701px) and (max-width: 900px) {
-                .flex-container {
-                   padding: 0;
-                }
+        }
+
+        @media only screen and (min-width: 701px) and (max-width: 900px) {
+            .flex-container {
+                padding: 0;
             }
-        </style>
+        }
+    </style>
 
-<link rel="stylesheet" href="assets/css/main.css" />
-    </head>
-    <body>
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
 
-         <!-- Mobile Navigation Menu -->
-         <div class="mobile-nav">
-                <a href="index.html" title="Ancora">
-                        <img src="assets/img/logo.png" alt="Ancora Logo"
-                      /></a>
-                      <a href="javascript:void(0);" class="icon" onclick="openMenu()">
-                <i class="fa fa-bars"></i>
-                </a>               
-                
+<body>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav">
+        <a href="index.html" title="Ancora">
+            <img src="assets/img/logo.png" alt="Ancora Logo" /></a>
+        <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+            <i class="fa fa-bars"></i>
+        </a>
+
+    </div>
+
+    <div id="mobileLinks">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="index.html#partners">Partners</a></li>
+            <li><a href="teams.html">Team</a></li>
+            <li><a href="contact-us" class="active">Contact</a></li>
+            <li><a href="donate.html">Donate</a></li>
+        </ul>
+    </div>
+
+
+    <div class="top">
+        <div class="logo">
+            <a href="index.html" title="Ancora">
+                <img src="assets/img/logo.png" alt="Ancora Logo" /></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="index.html#partners">Partners</a></li>
+                <li><a href="teams.html" class="active">Team</a></li>
+                <li><a href="contact-us">Contact</a></li>
+                <li><a class="donate" href="donate.html">Donate</a></li>
+            </ul>
+        </nav>
+        <div class="clear"></div>
+    </div>
+    <main>
+        <div class="teams-wrapper">
+            <div>
+                <h1 class="text-center">OUR TEAM</h1>
+                <p>A group of young ingenious minds dedicated to giving hope to every child on the street through
+                    partnership with reputable organisations for the purpose of societal growth and development.</p>
             </div>
+        </div>
 
-            <div id="mobileLinks">
-                    <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="index.html#about">About Us</a></li>
-                            <li><a href="projects.html">Projects</a></li>
-                            <li><a href="index.html#partners">Partners</a></li>
-                            <li><a href="teams.html">Team</a></li>
-                            <li><a href="contact-us" class="active">Contact</a></li>
-                            <li><a  href="donate.html">Donate</a></li>
-                          </ul>
-                    </div>
-
-                    
-            <div class="top">
-                    <div class="logo">
-                      <a href="index.html" title="Ancora">
-                        <img src="assets/img/logo.png" alt="Ancora Logo"
-                      /></a>
-                    </div>
-                    <nav>
-                            <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="index.html#about">About Us</a></li>
-                                    <li><a href="projects.html">Projects</a></li>
-                                    <li><a href="index.html#partners">Partners</a></li>
-                                    <li><a href="teams.html" class="active">Team</a></li>
-                                    <li><a href="contact-us" >Contact</a></li>
-                                    <li><a class="donate" href="donate.html">Donate</a></li>
-                                  </ul>
-                    </nav>
-                    <div class="clear"></div>
-                  </div>
-                  <main>
-                    <div class="teams-wrapper">
-                        <div>
-                            <h1 class="text-center">OUR TEAM</h1>
-                            <p>A group of young ingenious minds dedicated to giving hope to every child on the street through partnership with reputable organisations for the purpose of societal growth and development.</p>
+        <div class="teamdetails-container">
+            <div class="flex-container flex-space">
+                <div class="flex-item">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src="https://res.cloudinary.com/ancora-blessflame/image/upload/v1567420811/Ancora%20Project/Team%20Photos/Team%20Lead.jpg"
+                                class="img-responsive" alt="schoolchild">
                         </div>
-                    </div>
-        
-                    <div class="teamdetails-container">
-                        <div class="flex-container flex-space">
-                            <div class="flex-item">
-                                <div class="team-div">
-                                    <div class="team-background"></div>
-                                    <div class="team-picture">
-                                        <img src="https://res.cloudinary.com/ancora-blessflame/image/upload/v1567420811/Ancora%20Project/Team%20Photos/Team%20Lead.jpg" class="img-responsive" alt="schoolchild">
-                                    </div>
-                                    <div class="team-details">
-                                        <h4>Utibe Etim</h4>
-                                        <h6>Front end developer <br> Team Leader</h6>
-                                        <p>ALC mentor & Facilitator</p>
-                                        <div class="socials-container">
-                                            <div class="social-item">
-                                                <a href="https://www.linkedin.com/in/utibe-etim-0a901a107/"><i class="fa fa-linkedin"></i></a>
-                                            </div>
-                                            <div class="social-item">
-                                                <a href="https://twitter.com/Utcodes"><i class="fa fa-twitter"></i></a>
-                                            </div>
-                                            <div class="social-item">
-                                                <a href="https://github.com/Uticodes/"><i class="fa fa-github"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
+                        <div class="team-details">
+                            <h4>Utibe Etim</h4>
+                            <h6>Front end developer <br> Team Leader</h6>
+                            <p>ALC mentor & Facilitator</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href="https://www.linkedin.com/in/utibe-etim-0a901a107/"><i
+                                            class="fa fa-linkedin"></i></a>
                                 </div>
-                            </div>
-                            <div class="flex-item">
-                                <div class="team-div">
-                                    <div class="team-background"></div>
-                                    <div class="team-picture">
-                                        <img src="https://res.cloudinary.com/ancora-blessflame/image/upload/v1567427796/Ancora%20Project/Team%20Photos/olaitan_motame.jpg" class="img-responsive" alt="schoolchild">
-                                    </div>
-                                    <div class="team-details">
-                                        <h4>Aderoju Olaitan</h4>
-                                        <h6>Android / iOS Developer <br>Deputy</h6>
-                                        <p>I do Flutter with Dart</p>
-                                        <div class="socials-container">
-                                            <div class="social-item">
-                                                <a href="https://www.linkedin.com/in/aderoju-olaitan-828633b0/"><i class="fa fa-linkedin"></i></a>
-                                            </div>
-                                            <div class="social-item">
-                                                <a href="https://twitter.com/iamolaitan__"><i class="fa fa-twitter"></i></a>
-                                            </div>
-                                            <div class="social-item">
-                                                <a href="https://github.com/olaitan12"><i class="fa fa-github"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="social-item">
+                                    <a href="https://twitter.com/Utcodes"><i class="fa fa-twitter"></i></a>
                                 </div>
-                            </div>
-                            <div class="flex-item">
-                                <div class="team-div">
-                                    <div class="team-background"></div>
-                                    <div class="team-picture">
-                                        <img src="https://res.cloudinary.com/ancora-blessflame/image/upload/v1567429216/Ancora%20Project/Team%20Photos/Grace_ue7jhk.jpg" class="img-responsive" alt="schoolchild">
-                                    </div>
-                                    <div class="team-details">
-                                        <h4>Ogbo Grace</h4>
-                                        <h6>Machine Learning<br>Deputy</h6>
-                                        <p>Aspiring paragon.</p>
-                                        <div class="socials-container">
-                                            <div class="social-item">
-                                                <a href=""><i class="fa fa-linkedin"></i></a>
-                                            </div>
-                                            <div class="social-item">
-                                                <a href="https://twitter.com/gr2ce7"><i class="fa fa-twitter"></i></a>
-                                            </div>
-                                            <div class="social-item">
-                                                <a href="https://github.com/theokleiao "><i class="fa fa-github"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="social-item">
+                                    <a href="https://github.com/Uticodes/"><i class="fa fa-github"></i></a>
                                 </div>
-                            </div>
-                            <div class="flex-item mt-50">
-                                <div class="team-div">
-                                    <div class="team-background"></div>
-                                    <div class="team-picture">
-                                        <img src="https://res.cloudinary.com/ancora-blessflame/image/upload/v1567429697/Ancora%20Project/Team%20Photos/Vasily_r3skyu.jpg" class="img-responsive" alt="schoolchild">
-                                    </div>
-                                    <div class="team-details">
-                                        <h4>Vasily Mikhailovich Doestovski</h4>
-                                        <h6>Web developer<br>Deputy</h6>
-                                        <p>Web developer who enjoys making funny faces at  babies.</p>
-                                        <div class="socials-container">
-                                            <div class="social-item">
-                                                <a href="https://www.linkedin.com/in/jeffrey-asamoah-ojugbana-873426145/de?originalSubdomain=ng"><i class="fa fa-linkedin"></i></a>
-                                            </div>
-                                            <div class="social-item">
-                                                <a href="https://twitter.com/Vasilypoet"><i class="fa fa-twitter"></i></a>
-                                            </div>
-                                            <div class="social-item">
-                                                <a href=""><i class="fa fa-github"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex-item mt-50">
-                                <div class="team-div">
-                                    <div class="team-background"></div>
-                                    <div class="team-picture">
-                                        <img src="https://res.cloudinary.com/ancora-blessflame/image/upload/v1567427916/Ancora%20Project/Team%20Photos/Koiki%20Shakirat.jpg" class="img-responsive" alt="schoolchild">
-                                    </div>
-                                    <div class="team-details">
-                                        <h4>Koiki Shakirat</h4>
-                                        <h6>Front end developer<br>Member</h6>
-                                        <p>Coding gives me peace.</p>
-                                        <div class="socials-container">
-                                            <div class="social-item">
-                                                <a href=""><i class="fa fa-linkedin"></i></a>
-                                            </div>
-                                            <div class="social-item">
-                                                <a href=""><i class="fa fa-twitter"></i></a>
-                                            </div>
-                                            <div class="social-item">
-                                                <a href=""><i class="fa fa-github"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex-item mt-50">
-                                <div class="team-div">
-                                    <div class="team-background"></div>
-                                    <div class="team-picture">
-                                        <img src="https://res.cloudinary.com/ancora-blessflame/image/upload/v1567429967/Ancora%20Project/Team%20Photos/Acushla_shigor.jpg" class="img-responsive" alt="schoolchild">
-                                    </div>
-                                    <div class="team-details">
-                                        <h4>Acushla Shigor</h4>
-                                        <h6>Front end developer <br> Member </h6>
-                                        <p>Google Bestfriend</p>
-                                        <div class="socials-container">
-                                            <div class="social-item">
-                                                <a href=""><i class="fa fa-linkedin"></i></a>
-                                            </div>
-                                            <div class="social-item">
-                                                <a href=""><i class="fa fa-twitter"></i></a>
-                                            </div>
-                                            <div class="social-item">
-                                                <a href=""><i class="fa fa-github"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex-item mt-50">
-                                <div class="team-div">
-                                    <div class="team-background"></div>
-                                    <div class="team-picture">
-                                        <img src="https://res.cloudinary.com/ancora-blessflame/image/upload/v1567429997/Ancora%20Project/Team%20Photos/Ephraim_qqyiel.jpg" class="img-responsive" alt="schoolchild">
-                                    </div>
-                                    <div class="team-details">
-                                        <h4>Ibatt Ephraim</h4>
-                                        <h6>Front end developer <br> Member </h6>
-                                        <p>I speak in Python</p>
-                                        <div class="socials-container">
-                                            <div class="social-item">
-                                                <a href="https://www.linkedin.com/mwlite/me"><i class="fa fa-linkedin"></i></a>
-                                            </div>
-                                            <div class="social-item">
-                                                <a href=""><i class="fa fa-twitter"></i></a>
-                                            </div>
-                                            <div class="social-item">
-                                                <a href="https://github.com/Ephraimite"><i class="fa fa-github"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex-item mt-50">
-                                <div class="team-div">
-                                    <div class="team-background"></div>
-                                    <div class="team-picture">
-                                        <img src="https://res.cloudinary.com/ancora-blessflame/image/upload/v1567430111/Ancora%20Project/Team%20Photos/Emadamerho%20Nefe.jpg" class="img-responsive" alt="schoolchild">
-                                    </div>
-                                    <div class="team-details">
-                                        <h4>Emadamerho Nefe</h4>
-                                        <h6>Front end developer <br> Member </h6>
-                                        <p>i'm Daddy Nefs</p>
-                                        <div class="socials-container">
-                                            <div class="social-item">
-                                                <a href=""><i class="fa fa-linkedin"></i></a>
-                                            </div>
-                                            <div class="social-item">
-                                                <a href=""><i class="fa fa-twitter"></i></a>
-                                            </div>
-                                            <div class="social-item">
-                                                <a href=""><i class="fa fa-github"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex-item mt-50">
-                                    <div class="team-div">
-                                        <div class="team-background"></div>
-                                        <div class="team-picture">
-                                            <img src="https://res.cloudinary.com/ancora-blessflame/image/upload/v1567430324/Ancora%20Project/Team%20Photos/eRiick_ygw4hq.jpg" class="img-responsive" alt="schoolchild">
-                                        </div>
-                                        <div class="team-details">
-                                            <h4>Idris Sado Erick</h4>
-                                            <h6>FullStack developer <br> Deputy </h6>
-                                            <p>Google Bestfriend</p>
-                                            <div class="socials-container">
-                                                <div class="social-item">
-                                                    <a href=""><i class="fa fa-linkedin"></i></a>
-                                                </div>
-                                                <div class="social-item">
-                                                    <a href=""><i class="fa fa-twitter"></i></a>
-                                                </div>
-                                                <div class="social-item">
-                                                    <a href=""><i class="fa fa-github"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            <div class="flex-item mt-50">
-                                <div class="team-div">
-                                    <div class="team-background"></div>
-                                    <div class="team-picture">
-                                        <img src="https://res.cloudinary.com/ancora-blessflame/image/upload/v1567431513/Ancora%20Project/Team%20Photos/Agboola%20Eniola.jpg" class="img-responsive" alt="schoolchild">
-                                    </div>
-                                    <div class="team-details">
-                                        <h4>Agboola Eniola</h4>
-                                        <h6>FullStack developer <br> Deputy </h6>
-                                        <p>Google girlfriend</p>
-                                        <div class="socials-container">
-                                            <div class="social-item">
-                                                <a href=""><i class="fa fa-linkedin"></i></a>
-                                            </div>
-                                            <div class="social-item">
-                                                <a href="https://twitter.com/agboolaenny"><i class="fa fa-twitter"></i></a>
-                                            </div>
-                                            <div class="social-item">
-                                                <a href="https://github.com/eniola4031"><i class="fa fa-github"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex-item mt-50">
-                                <div class="team-div">
-                                    <div class="team-background"></div>
-                                    <div class="team-picture">
-                                        <img src="https://res.cloudinary.com/ancora-blessflame/image/upload/v1567433784/Ancora%20Project/Team%20Photos/Uloma%20Okoro.jpg" class="img-responsive" alt="schoolchild">
-                                    </div>
-                                    <div class="team-details">
-                                        <h4>Uloma Okoro</h4>
-                                        <h6>Digital Marketing <br> Member </h6>
-                                        <p>An Explorer</p>
-                                        <div class="socials-container">
-                                            <div class="social-item">
-                                                <a href=""><i class="fa fa-linkedin"></i></a>
-                                            </div>
-                                            <div class="social-item">
-                                                <a href=""><i class="fa fa-twitter"></i></a>
-                                            </div>
-                                            <div class="social-item">
-                                                <a href=""><i class="fa fa-github"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex-item mt-50">
-                                <div class="team-div">
-                                    <div class="team-background"></div>
-                                    <div class="team-picture">
-                                        <img src="https://res.cloudinary.com/ancora-blessflame/image/upload/v1567438114/Ancora%20Project/Team%20Photos/OLOYEDE%2C%20Charles%20Akinropo.jpg" class="img-responsive" alt="schoolchild">
-                                    </div>
-                                    <div class="team-details">
-                                        <h4>Oloyede Charles</h4>
-                                        <h6>Frontend <br> Member </h6>
-                                        <p>Upcoming Fullstack</p>
-                                        <div class="socials-container">
-                                            <div class="social-item">
-                                                <a href=""><i class="fa fa-linkedin"></i></a>
-                                            </div>
-                                            <div class="social-item">
-                                                <a href=""><i class="fa fa-twitter"></i></a>
-                                            </div>
-                                            <div class="social-item">
-                                                <a href=""><i class="fa fa-github"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
                             </div>
                         </div>
                     </div>
-                </main>
-      <!-- <footer>
+                </div>
+                <div class="flex-item">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src="https://res.cloudinary.com/ancora-blessflame/image/upload/v1567430324/Ancora%20Project/Team%20Photos/eRiick_ygw4hq.jpg"
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Idris Sado Erick</h4>
+                            <h6>FullStack developer <br> Deputy </h6>
+                            <p>Google Bestfriend</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src="https://res.cloudinary.com/ancora-blessflame/image/upload/v1567431513/Ancora%20Project/Team%20Photos/Agboola%20Eniola.jpg"
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Agboola Eniola</h4>
+                            <h6>FullStack developer <br> Deputy </h6>
+                            <p>Google girlfriend</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href="https://twitter.com/agboolaenny"><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href="https://github.com/eniola4031"><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src="https://res.cloudinary.com/ancora-blessflame/image/upload/v1567427796/Ancora%20Project/Team%20Photos/olaitan_motame.jpg"
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Aderoju Olaitan</h4>
+                            <h6>Android / iOS Developer <br>Deputy</h6>
+                            <p>I do Flutter with Dart</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href="https://www.linkedin.com/in/aderoju-olaitan-828633b0/"><i
+                                            class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href="https://twitter.com/iamolaitan__"><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href="https://github.com/olaitan12"><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src="https://res.cloudinary.com/ancora-blessflame/image/upload/v1567429216/Ancora%20Project/Team%20Photos/Grace_ue7jhk.jpg"
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Ogbo Grace</h4>
+                            <h6>Machine Learning<br>Deputy</h6>
+                            <p>Aspiring paragon.</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href="https://twitter.com/gr2ce7"><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href="https://github.com/theokleiao "><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src="https://res.cloudinary.com/ancora-blessflame/image/upload/v1567429697/Ancora%20Project/Team%20Photos/Vasily_r3skyu.jpg"
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Vasily Mikhailovich Doestovski</h4>
+                            <h6>Web developer<br>Deputy</h6>
+                            <p>Web developer who enjoys making funny faces at babies.</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a
+                                        href="https://www.linkedin.com/in/jeffrey-asamoah-ojugbana-873426145/de?originalSubdomain=ng"><i
+                                            class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href="https://twitter.com/Vasilypoet"><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src="https://res.cloudinary.com/ancora-blessflame/image/upload/v1567427916/Ancora%20Project/Team%20Photos/Koiki%20Shakirat.jpg"
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Koiki Shakirat</h4>
+                            <h6>Front end developer<br>Member</h6>
+                            <p>Coding gives me peace.</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src="https://res.cloudinary.com/ancora-blessflame/image/upload/v1567429967/Ancora%20Project/Team%20Photos/Acushla_shigor.jpg"
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Acushla Shigor</h4>
+                            <h6>Front end developer <br> Member </h6>
+                            <p>Google Bestfriend</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src="https://res.cloudinary.com/ancora-blessflame/image/upload/v1567429997/Ancora%20Project/Team%20Photos/Ephraim_qqyiel.jpg"
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Ibatt Ephraim</h4>
+                            <h6>Front end developer <br> Member </h6>
+                            <p>I speak in Python</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href="https://www.linkedin.com/mwlite/me"><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href="https://github.com/Ephraimite"><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src="https://res.cloudinary.com/ancora-blessflame/image/upload/v1567430111/Ancora%20Project/Team%20Photos/Emadamerho%20Nefe.jpg"
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Emadamerho Nefe</h4>
+                            <h6>Front end developer <br> Member </h6>
+                            <p>i'm Daddy Nefs</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src="https://res.cloudinary.com/ancora-blessflame/image/upload/v1567430045/Ancora%20Project/Team%20Photos/Aslam.jpg"
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Aslam</h4>
+                            <h6>Frontend developer <br> Member </h6>
+                            <p>Google Bestfriend</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src="https://res.cloudinary.com/ancora-blessflame/image/upload/v1567540221/Ancora%20Project/Team%20Photos/Ebuka_Charles_lnqqs4.jpg"
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Ebuka Charles</h4>
+                            <h6>FullStack developer <br> Member </h6>
+
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src="https://res.cloudinary.com/ancora-blessflame/image/upload/v1567433784/Ancora%20Project/Team%20Photos/Uloma%20Okoro.jpg"
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src="https://res.cloudinary.com/ancora-blessflame/image/upload/v1567438114/Ancora%20Project/Team%20Photos/OLOYEDE%2C%20Charles%20Akinropo.jpg"
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Oloyede Charles</h4>
+                            <h6>Frontend <br> Member </h6>
+                            <p>Upcoming Fullstack</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src="https://res.cloudinary.com/anowai-py/image/upload/v1566934494/passport_ycg7gp.jpg
+                                        " class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Anowai-p
+                            </h4>
+                            <h6>Frontend Developer <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src="https://res.cloudinary.com/dbksbmf4b/image/upload/b_rgb:000000,c_scale,w_130/v1566502403/DSC_0869_yd2wzs.jpg
+                                        " class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Calvic
+                            </h4>
+                            <h6>Frontend Developer <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src="https://res.cloudinary.com/devisiyi/image/upload/v1566598394/IMG_20190728_151402_3_ms4dpm.jpg"
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Olusiyi David Benjamin</h4>
+                            <h6>Frontend Developer <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src="https://res.cloudinary.com/jokuriodev/image/upload/v1566534998/joey_yejmi4.jpg"
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Jonathan Owah</h4>
+                            <h6>Frontend Developer <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src="https://res.cloudinary.com/delatbaba/image/upload/v1566599340/delatbaba.jpg"
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Babalola Lateef Adebayo</h4>
+                            <h6>Frontend Developer <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4></h4>
+                            <h6>Frontend Developer <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src="https://res.cloudinary.com/dpwlrklft/image/upload/v1566737919/PRE-INTERNSHIP/AYO_IMAGE_a7ywrk.jpg"
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Ayo Joseph </h4>
+                            <h6>Frontend Developer <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src="https://res.cloudinary.com/rahmat01/image/upload/v1566610319/IMG_8377_niomgx.jpg"
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Rahmat AbdulMajeed</h4>
+                            <h6>Frontend Developer <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src="https://res.cloudinary.com/knethub/image/upload/v1566635044/emaido_k5hfsu.jpg"
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Emaido Essien</h4>
+                            <h6>Frontend Developer <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src="https://res.cloudinary.com/masterp/image/upload/v1567513866/36BAF240-7126-4617-9072-D34496C11C55_nytjhv.jpg"
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Pius Alenkhe</h4>
+                            <h6>Frontend Developer <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src="https://res.cloudinary.com/leeka/image/upload/v1567028176/IMG_0483_pqapfm.jpg"
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Anwulika Ngene </h4>
+                            <h6>Frontend Developer <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src="https://res.cloudinary.com/brainsofts/image/upload/v1566571616/IMG_20190409_083009_1_i5shyw.jpg"
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Dr. Brain</h4>
+                            <h6>Frontend Developer <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src="https://res.cloudinary.com/dxonc8cxc/image/upload/v1566546938/Chigozie_i5bkw8.jpg"
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>EMMANUEL CHIGOZIE</h4>
+                            <h6>Frontend Developer <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src="https://res.cloudinary.com/ddkuhs8ax/image/upload/v1566592786/11-DSC_5348_khkq5t.jpg"
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Ani Chidera </h4>
+                            <h6>Frontend Developer <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src="https://res.cloudinary.com/dndsnobu1/image/upload/c_scale,w_851/v1567498193/20190601_183643_g4d2cg.jpg"
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Afolabi Abiodun</h4>
+                            <h6>Frontend Developer <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src="https://res.cloudinary.com/rahmat01/image/upload/v1566610319/IMG_8377_niomgx.jpg"
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Rahmat AbdulMajeed</h4>
+                            <h6>Frontend Developer <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src="https://res.cloudinary.com/dv26expzw/image/upload/v1567500022/20190811_133040_cxd10y.jpg"
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Oluwadamilola Ipinyemi </h4>
+                            <h6>Frontend Developer <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src="https://res.cloudinary.com/tcoker/image/upload/v1567501473/tc3_rng10s.jpg"
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Taiwo Coker</h4>
+                            <h6>Frontend Developer <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4></h4>
+                            <h6>Frontend Developer <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src="https://res.cloudinary.com/kruzabasi/image/upload/v1566509004/Untitled_Design_h03frh.png"
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Nnah Ukpono</h4>
+                            <h6>Frontend Developer <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4></h4>
+                            <h6>Frontend Developer <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src="https://res.cloudinary.com/eshy008/image/upload/e_art:incognito,q_94,r_5/v1567503085/fine_selfie_feaa5u.jpg"
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Ifoga Eshy John</h4>
+                            <h6>Frontend Developer <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src="https://res.cloudinary.com/dkyb7lx0u/image/upload/v1566510004/Dee_duhc6f.jpg"
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Adedolapo Olaiya</h4>
+                            <h6>Frontend Developer <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src="https://res.cloudinary.com/thedavyloper/image/upload/v1567503962/IMG_20190817_155803_kafhnj.jpg"
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>David A. Akpan</h4>
+                            <h6>Frontend Developer <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src="https://res.cloudinary.com/esorison/image/upload/v1566565719/cv/passport_prlzk7.jpg"
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Ehis Samuel  </h4>
+                            <h6>Frontend Developer <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src="https://res.cloudinary.com/realayo/image/upload/v1566559404/startng/IMG_4067_pwdkrh.jpg"
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Ayo Omodara</h4>
+                            <h6>Frontend Developer <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src="https://res.cloudinary.com/dsmn6fc0f/image/upload/v1567512468/IMG_20190514_102414-1_gp7tfd.jpg"
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Abiola Rasak  </h4>
+                            <h6>Frontend Developer <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src="https://res.cloudinary.com/easyakowe/image/upload/v1567515216/teammoscow.jpg"
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Akowe Israel T</h4>
+                            <h6>Backend Developer <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src="https://res.cloudinary.com/leeka/image/upload/v1567028176/IMG_0483_pqapfm.jpg"
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Anwulika Ngene </h4>
+                            <h6>Frontend Developer <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src="https://res.cloudinary.com/iinintinteintegintegrintegral/image/upload/v1566574600/My%20web/12622396_1262205447128743_256711488946894401_o_ggjyqb.jpg"
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Ayoola Taiwo</h4>
+                            <h6>Frontend Developer <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src="https://res.cloudinary.com/absworld-code/image/upload/v1566567026/IMG_0372_magebk.jpg"
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Abasiama Akai</h4>
+                            <h6>Frontend Developer <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src="https://res.cloudinary.com/daisypeiz/image/upload/v1567558724/_MG_1370_jo9q0v.jpg"
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Emem</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Frontend Developer<br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Frontend Developer <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item mt-50">
+                    <div class="team-div">
+                        <div class="team-background"></div>
+                        <div class="team-picture">
+                            <img src=""
+                                class="img-responsive" alt="schoolchild">
+                        </div>
+                        <div class="team-details">
+                            <h4>Uloma Okoro</h4>
+                            <h6>Digital Marketing <br> Member </h6>
+                            <p>An Explorer</p>
+                            <div class="socials-container">
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="social-item">
+                                    <a href=""><i class="fa fa-github"></i></a>
+                                </div>
+                                <div><Button class="about_me" type="button"> About Me </Button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- <footer>
         <div class="footer-left"><a href="#"><img src="https://res.cloudinary.com/iinintinteintegintegrintegral/image/upload/v1567230601/My%20web/ancora_udeujy.png" width="70px" height="70px"></a></div>
         <div class ="footer-right">         
         <ul>
@@ -560,7 +2924,7 @@
       </footer> -->
 
 
-      <footer>
+    <footer>
         <div class="footer-flex">
             <div class="footer-item">
                 <img src="images/ancora.png" alt="logo">
@@ -570,22 +2934,21 @@
                 <p>+234 345 678 903</p>
                 <p>care@ancora.com</p>
 
-                
+
             </div>
-                        </div>
-                        
-                        <div class="floatRight">
-                            <div class="fontAwe">                                        
-                                <i class="fa fa-instagram"></i>
-                                <i class="fa fa-facebook"></i>
-                                <i class="fa fa-twitter"></i>
-                            </div>
-                            <small>&copy; Ancora 2019</small>
-                        </div> 
+        </div>
+
+        <div class="floatRight">
+            <div class="fontAwe">
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+            </div>
+            <small>&copy; Ancora 2019</small>
+        </div>
     </footer>
 
-        <script src="assets/js/main.js"></script>
-    </body>
-</html>
-  
+    <script src="assets/js/main.js"></script>
+</body>
 
+</html>
