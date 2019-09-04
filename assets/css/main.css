@@ -1,4 +1,5 @@
 @import '../../styles/footer.css';
+@import '/styles/partners.css';
 
 /* 
     primary color: #7b1fa2;
@@ -8,9 +9,9 @@
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
 
 }
 
@@ -118,6 +119,10 @@ header {
     padding: 1.5rem;
     font-size: 1.6rem;
     border-radius: .3rem;
+}
+
+#gapB4Image {
+    margin: 1em;
 }
 
 @media only screen and (max-width: 600px) {
