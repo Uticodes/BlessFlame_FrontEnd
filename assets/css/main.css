@@ -84,7 +84,7 @@ header {
 .big-hero {
     height: 85vh;
     background-image: 
-        url(../img/ancora-home_big.jpg);
+    url(../img/ancora-home_big.jpg);
     background-size: cover;
     background-position: top;
     position: relative;
@@ -434,9 +434,9 @@ PARTNERS SECTION
 
 @media only screen and (max-width: 768px) {
     .partners-section img {
-        margin-right: 2rem;
-        
+        margin-right: 2rem;   
     }
+    
 }
 
 .partners-section .second img {
