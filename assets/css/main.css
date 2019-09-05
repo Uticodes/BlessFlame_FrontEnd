@@ -1,4 +1,5 @@
 @import '../../styles/footer.css';
+@import '/styles/partners.css';
 
 /* 
     primary color: #7b1fa2;
@@ -8,9 +9,9 @@
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
 
 }
 
@@ -84,7 +85,7 @@ header {
 .big-hero {
     height: 85vh;
     background-image: 
-        url(../img/ancora-home_big.jpg);
+    url(../img/ancora-home_big.jpg);
     background-size: cover;
     background-position: top;
     position: relative;
@@ -118,6 +119,10 @@ header {
     padding: 1.5rem;
     font-size: 1.6rem;
     border-radius: .3rem;
+}
+
+#gapB4Image {
+    margin: 1em;
 }
 
 @media only screen and (max-width: 600px) {
@@ -434,9 +439,9 @@ PARTNERS SECTION
 
 @media only screen and (max-width: 768px) {
     .partners-section img {
-        margin-right: 2rem;
-        
+        margin-right: 2rem;   
     }
+    
 }
 
 .partners-section .second img {
