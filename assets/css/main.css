@@ -586,7 +586,83 @@ FORM COMPONENT
         outline: none;
         transform: translateY(-0.1rem);
         box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+}
+
+/* 
+//////////////////////////////////////////////////////////////
+PROJECTS PAGE
+//////////////////////////////////////////////////////////////
+*/
+
+
+.project-section {
+    width: 70%;
+    margin: 0 auto;
+    background-color: rgb(235, 201, 235);
+    padding: 5rem .5rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+    .project-section {
+        width: 100%;
+        padding-left: 1rem;
     }
+}
+
+@media only screen and (max-width: 450px) {
+    .project__card {
+        margin-bottom: .35rem !important;
+    }
+}
+
+.project__card {
+    width: 245px;
+    margin: 2rem 0;
+    background-color: #fff;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+    border-radius: .5rem;
+    box-shadow: 2px 1px 3px rgba(0,0,0,.8);
+    transition: .2s all;
+}
+
+.project__card:hover{
+    transform: translateY(-1.2rem);
+    transform: scale(1.1);
+}
+
+.project__card--text {
+    background-color: purple;
+    color: #fff;
+    padding: 1.5rem;
+    margin-top: -1rem;
+}
+
+.project__card--text h2 {
+    color: #fff;
+}
+
+.project__done-box {
+
+    width: 250px;
+    background: #fff;
+    border: 1px solid;
+    display: inline-block;
+    padding: 2px;
+    transition: .2s all;
+
+}
+
+.project__done-box:hover {
+    transform: translateY(-1.2rem);
+    transform: scale(1.05);
+    box-shadow: 2px 1px 2px rgba(0,0,0,.8);
+}
+
+
+
 /* 
 //////////////////////////////////////////////////////////////
 FOOTER SECTION 
