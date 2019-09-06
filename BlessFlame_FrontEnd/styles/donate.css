@@ -1,0 +1,133 @@
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+	background-image: url("../images/ancoraschool.jpg");
+	background-repeat: no-repeat, no-repeat;
+	background-size: 100%;
+	background-position: left top, right top;   
+}
+
+.topnav {
+	overflow: hidden;
+	background-color: #7b1fa2;
+	background-size: 100%;
+}
+            
+.topnav a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	width: 6em;
+}
+            
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+            
+.topnav a.active {
+	background-color: #7b1fa2;
+	color: white;
+}
+
+button {
+	background-color: #7b1fa2;
+	color: white;
+	padding: 10px 10px;
+	margin: 8px 0px;
+	border: none;
+	cursor: pointer;
+	width: 5%;
+	border-radius: 2px;	
+}
+
+button :hover {
+	opacity: 0.2;
+}
+
+a:link, a:visited {
+	background-color: #7b1fa2;
+	color: white;
+	padding: 15px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+
+a:hover, a:active {
+	background-color: #7b4194;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+input[type=text], input[type=password] {
+	width: 30%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	box-sizing: border-box;
+}
+.bordered {
+	width: 500px;
+	height: 100px;
+	padding: 20px;
+	border: 1px solid darkorange;
+	border-radius: 8px;
+}
+
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  h2 {
+    color: white;
+    margin-left: 20px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+  }
+
+  h3 {
+    color: white;
+    margin-left: 20px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    }
+
+
